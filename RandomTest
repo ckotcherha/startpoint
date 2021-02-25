@@ -1,0 +1,25 @@
+class generateRN {
+        public static void Numb(int x) {
+            int min = 1;
+            int array[] = new int[x + 1];
+            // Generate random number from 0 to 1
+            System.out.println("Random values between " + min + " to " + x + ":");
+            for (int n1 = 1;
+                 n1 <= x;
+                 n1++) {
+// Generating random numbers from Min to Max
+                int b = (int) (Math.random() * (x - min + 1) + min);
+                array[n1] = b;
+            }
+            int j;
+            int i;
+            // Printing unique values from 1 .. n in random order
+            for (i=1; i<=x; i++){
+                for (j=1; j<i; j++)
+                    if (array[i] == array[j])
+                        break;
+                if (i == j)
+                    System.out.print(array[i] + " ");
+            }
+        }
+    }
