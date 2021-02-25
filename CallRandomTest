@@ -1,0 +1,6 @@
+// Script created by Carolina Kotcherha
+public class test {
+        public static void main(String [] args){
+            generateRN.Numb(10);
+        }
+    
